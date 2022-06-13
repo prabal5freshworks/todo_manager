@@ -1,0 +1,176 @@
+/* CSS FILE FOR VIEWS => TODO FOLDER => ALL ERB FILES */
+
+body{
+
+    font-family: sans-serif;
+    max-width: 600px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* .TodoPageMian{
+display: flex;
+} */
+.TodoPage-title{
+    font-size: 48px;
+    line-height: 1.6;
+    color:rgb(36, 31, 50)
+
+}
+.TodoSection-Title{
+    font-size: 34px;
+    line-height: 1.4;
+    color:rgb(36, 31, 50)
+
+}
+.TodoSection-Todo{
+    font-size: 20px;
+    line-height: 1.6;
+    color:rgb(36, 31, 50)
+}
+.TodoSection{
+    margin-bottom: 20px;
+    display: block;
+    /* margin-left: 32px; */
+    /* padding: 32px; */
+}
+
+.AddTodo{
+    display: flex;
+    height: 32px;
+    align-items: stretch;
+    margin-bottom: 24px;
+
+}
+.AddTodo-text{
+    padding: 6px 12px;
+    font-size: 14px;
+    color: rgb(56, 44, 44);
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #BFB8CC;
+
+}
+.AddTodo-date{
+
+    padding: 6px;
+    font-size: 14px;
+    color: rgb(56, 44, 44);
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid #BFB8CC; 
+
+}
+
+.AddTodo-button{
+
+    padding: 6px 22px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 236, 38);
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+}
+
+
+.TodoSectionTitle{
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.TodoSectionTitle-text{
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 8px;
+    line-height: 1.4;
+}
+.TodoSectionTitle-remaningCount{
+    font-size: 12px;
+    color: rgb(255, 3, 70);
+    background-color: rgb(135, 220, 235);
+}
+ol,ul{
+    list-style:none;
+}
+.TodoItem{
+    font-size: 14px;
+    margin-left: 8px;
+    margin-bottom: 6px;
+    color: black;
+}
+.TodoItem-container{
+    /* display: inline-flex; */
+    display: flex;
+    padding: 2px 8px;
+    align-items: center;
+}
+
+.TodoItem-checkbox{
+    width: 16px;
+    height: 16px;
+
+}
+.TodoItem-overdueabel{
+    margin-left: 10px;
+    color: red;
+    font-size: 12px;
+    display: inline;
+}
+.TodoItem-container:hover{
+    background-color: rgb(215, 211, 211);
+}
+  
+.TodoItem-delete > img {
+    width: 14px;
+    height:14px;
+}
+
+/* We can use class or id for css  */
+
+/* .TodoItem-delete-image
+{
+    width: 14px ;
+    height: 16px;
+
+} */
+
+#TodoItem-delete-image
+{
+    width: 20px ;
+    height: 20px;
+
+}
+
+/* width=10px  height=10px */
+.TodoItem-delete{
+    visibility: hidden;
+    margin-left: 8px;
+
+    
+}
+
+.TodoItem-container:hover .TodoItem-delete{
+    visibility: visible;
+}
+.todoItem-duedate{
+    color: rgb(4, 4, 48);
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.todoItem-completedText{
+    color: blue;
+}
+
+
+/* 
+<a class="TodoItem-delete"  href="javascript:void(0)">
+<%= form_with(url: "/todos/#{todo.id}", method: "delete") do %> 
+    <input id="TodoItem-delete-image" type="image"   <%= image_tag "download.png" %>  >
+
+<% end %> */
+
+/* <input id="TodoItem-delete-image" type="image"  src="download.png" > */

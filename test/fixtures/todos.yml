@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  todo_text: MyText
+  due_date: 2022-04-28
+  completed: false
+
+two:
+  todo_text: MyText
+  due_date: 2022-04-28
+  completed: false

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoManager</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+  
+  <h1 style="background-color: darkblue ; color:white;">The todo application</h1>
+    <% if @current_user %>
+      <p class="UserHeader">
+         Welcome, <%= @current_user.first_name %>  
+        <%= button_to "Sign-out", destroy_session_path , method: "delete" %>
+        
+      </p>  
+    <% end %> 
+    <% if flash[:error] %>
+      <p class="Flash-error"><%= flash[:error] %></p>
+    <% end %>
+ 
+    <%= yield %>
+    <hr>
+    <p style="font-size:32px;"> TodoManager app(c) the todo company</p>
+  </body>
+</html>
