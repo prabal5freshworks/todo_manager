@@ -1,2 +1,2 @@
 # todo_manager
-#this is my 1st project in ror
+#this is my 1st project in ror (RUBY IN RAILS)
